@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css"  rel="stylesheet" type="text/css"/>
+    <title>Web Store</title>
+</head>
+<body>
+    <h1>Board Store</h1>
+    <hr>
+    <h2>Welcome to Board Store. We carry all the hottest board games that your family will love.</h2>
+    <h2>Please shop our selection below!</h2>
+    <form action="customerBackend.php" method="Post">
+        <table cellspacing="100" class="games">
+            <tr>
+                <td>
+                    <img src="life.jpeg" id="lifeimg">
+                    <p class="game-title">The Game of Life</p>
+                    <p class="price">$25</p>
+                    Quantity:<input type="number" name="life" id="life">
+                </td>
+                <td>
+                    <img src="sorry.jpeg" id="sorryimg">
+                    <p class="game-title">Sorry</p>
+                    <p class="price">$10</p>
+                    Quantity: <input type="number" name="sorry" id="sorry">
+                </td>
+                <td>
+                    <img src="scrabble.jpeg" id="srabbleimg">
+                    <p class="game-title">Scabble: Luxury Edition</p>
+                    <p class="price">$250</p>
+                    Quantity: <input type="number" name="scrabble" id="scrabble">
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Checkout</h3>
+          <!-- Checkout-->
+            <p>Please enter a username with a valid email and a password.</p>
+            Username:<input type="text" name="username"><br><br>
+            Password:<input type="password" name="pwd">
+            <p>Please select a shipping option.</p>
+            <input type="radio" name="ship" id="free" value="0">
+            <label for="free"> Free 7 day</label>
+            <br>
+            <input type="radio" name="ship" id="three" value="5">
+            <label for="three">$5.00 three day</label>
+            <br>
+            <input type="radio" name="ship" id="overnight" value="50">
+            <label for="overnight">$50.00 over night</label>
+            <br>
+            <input type="submit" value="Purchase">
+    </form>
+</body>
+</html>
